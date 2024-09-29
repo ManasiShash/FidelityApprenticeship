@@ -1,5 +1,6 @@
 import java.time.LocalDate;
 import java.time.Period;
+import java.time.format.DateTimeParseException;
 import java.util.Scanner;
 
 public class Person {
@@ -45,28 +46,23 @@ public class Person {
         System.out.println(getAdult());
     }
 }
-class Program2{
+class Program2 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        try {
+            System.out.println("Enter Firstname: ");
+            String firstname1 = sc.nextLine();
+            System.out.println("Enter Lastname: ");
+            String lastname1 = sc.nextLine();
+            System.out.println("Enter Dob: ");
+            LocalDate dob1 = LocalDate.parse(sc.nextLine());
 
-        System.out.println("Enter Firstname: ");
-        String firstname1 = sc.nextLine();
-        System.out.println("Enter Lastname: ");
-        String lastname1 = sc.nextLine();
-        System.out.println("Enter Dob: ");
-        LocalDate dob1 = LocalDate.parse(sc.nextLine());
-
-        Person person1 = new Person(firstname1, lastname1, dob1);
-        person1.display();
-
-        System.out.println("Enter first name: ");
-        String firstname2 = sc.nextLine();
-        System.out.println("Enter Lastname: ");
-        String lastname2 = sc.nextLine();
-        System.out.println("Enter Dob in yyyy-MM-dd format: ");
-        LocalDate dob2 = LocalDate.parse(sc.nextLine());
-        Person person2 = new Person(firstname2, lastname2, dob2);
-        person2.display();
-        sc.close();
+            Person person1 = new Person(firstname1, lastname1, dob1);
+            person1.display();
+        } catch (DateTimeParseException e) {
+            System.out.println("invalid date format. please enter the date in yyyy-mm-dd format.");
+        } finally {
+            sc.close();
+        }
     }
 }
