@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Feedback Rating Chart</title>
+    <style>
+        /* Body styling */
+        body {
+            background-color: #faf4a0; /* Light beige background */
+            font-family: Arial, sans-serif;
+            color: #333; /* Dark gray text */
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Header styling */
+        h1 {
+            text-align: center;
+            color: #8B008B; /* Dark magenta */
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        /* Table styling */
+        table {
+            margin: 0 auto; /* Center the table */
+            background-color: #ffffff; /* White background for the table */
+            width: 80%; /* Table width */
+            border-inline-start: #1b1b1b; /* Collapse borders */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow */
+        }
+
+        /* Caption styling */
+        caption {
+            font-weight: bold;
+            font-size: 1.5em; /* Larger font size for caption */
+            margin-bottom: 10px;
+            color: #8B4513; /* SaddleBrown */
+        }
+
+        /* Table header styling */
+        thead {
+            background-color: #800000; /* Dark red */
+            color: white; /* White text */
+        }
+
+        /* Table row styling */
+        tr {
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
+        }
+
+        /* Table row hover effect */
+        tr:hover {
+            background-color: #df9c75; /* Khaki */
+        }
+
+        /* Row background colors */
+        .tr1 {
+            background-color: #6dc76d; /* Light red for the first row */
+        }
+
+        #exl {
+            background-color: #6dc76d; /* Pale green */
+        }
+        #vg1{
+            background-color: #98fb98;
+        }
+
+        #gol {
+            background-color: #ffffe0; /* Light yellow */
+        }
+
+        #avl {
+            background-color: #c79b9b; /* Light gray */
+            color: #ffffff; /* White text */
+        }
+
+        #bal {
+            background-color: #ff6347; /* Tomato */
+            color: #ffffff; /* White text */
+        }
+
+        /* Table cell styling */
+        td {
+            padding: 10px;
+            text-align: center; /* Center text in cells */
+            border: 1px solid #ccc; /* Light gray border */
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            table {
+                width: 100%; /* Full width on small screens */
+            }
+
+            h1 {
+                font-size: 1.5em; /* Adjust heading size */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page Header -->
+    <h1>Trainer's Feedback Rating Chart</h1>
+
+    <!-- Trainer Feedback Table -->
+    <table>
+        <caption>Trainer's Name: Elite Parker</caption>
+        <thead>
+            <tr>
+                <th>S.No.</th>
+                <th>Training Module Name</th>
+                <th>Overall Rating</th>
+                <th>Feedback</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="tr1">
+                <td>1</td>
+                <td>HTML5, CSS3, JavaScript</td>
+                <td>5</td>
+                <td>Excellent</td>
+            </tr>
+            <tr id="exl">
+                <td>2</td>
+                <td>Basic Java Programming</td>
+                <td>5</td>
+                <td>Excellent</td>
+            </tr>
+            <tr id="vg1">
+                <td>3</td>
+                <td>Advanced Java Programming</td>
+                <td>4</td>
+                <td>Very Good</td>
+            </tr>
+            <tr id="gol">
+                <td>4</td>
+                <td>UNIX Shell Scripting</td>
+                <td>3</td>
+                <td>Good</td>
+            </tr>
+            <tr id="avl">
+                <td>5</td>
+                <td>Python Programming</td>
+                <td>2</td>
+                <td>Average</td>
+            </tr>

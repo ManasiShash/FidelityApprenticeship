@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Material Styling</title>
+    <style>
+        /* Body styling */
+        body {
+            background-color: #f5f5dc; /* Beige background */
+            font-family: Arial, sans-serif;
+            font-size: 12px;
+            color: #333; /* Dark gray text color for readability */
+            margin: 0;
+            padding: 20px;
+        }
+
+        /* Main container for padding and centering */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff; /* White background for the content area */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+            border-radius: 8px;
+        }
+
+        /* Heading styling */
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #8B4513; /* SaddleBrown */
+            margin-bottom: 20px;
+            font-weight: bold;
+            border-bottom: 2px solid #8B4513; /* Underline effect */
+            padding-bottom: 10px;
+        }
+
+        /* Paragraph with title attribute */
+        p[title] {
+            line-height: 1.8;
+            color: #333; /* Dark gray for readability */
+            font-size: 1em;
+            margin-bottom: 20px;
+        }
+
+        /* Description list styling */
+        dl {
+            padding: 20px;
+            background-color: #faf0e6; /* Light beige for description background */
+            border-left: 4px solid #8B4513; /* Brown vertical line for a design touch */
+            margin-bottom: 20px;
+        }
+
+        /* Description term styling */
+        dt {
+            font-weight: bold;
+            color: #8B4513; /* SaddleBrown */
+            font-size: 1.3em;
+            margin-bottom: 10px;
+        }
+
+        /* Description styling (used in <dd> tags) */
+        dd {
+            font-size: 1.2em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Specific styling for reasons section */
+        #reasons {
+            color: #d2691e; /* Chocolate */
+            line-height: 1.8;
+            font-style: italic;
+        }
+
+        /* Styling for specific descriptions by ID */
+        #description01 {
+            color: #a52a2a; /* Brown */
+            font-style: italic;
+        }
+
+        #description07 {
+            color: #cd853f; /* Peru */
+        
+            font-style: italic;
+        }
+
+        /* Emphasized text */
+        em {
+            color: #000; /* Black */
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+
+        /* Footer styling */
+        footer {
+            margin-top: 30px;
+            text-align: center;
+            color: #8B4513;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Page header -->
+        <h1>Why Learn Java Programming?</h1>
+
+        <!-- Paragraph with title attribute -->
+        <p title="Introduction to Java">
+            Java is a MUST for students and working professionals to become great Software Engineers, especially when they are working in the Software Development Domain. Here is a list of key advantages of learning Java Programming:
+        </p>
+
+        <!-- Description list -->
+        <dl>
+            <dt>Platform Independence</dt>
+            <dd id="description01">Unlike many other languages that are platform-specific, Java is compiled into byte code. This makes it highly portable across various platforms and operating systems.</dd>
+
+            <dt>Object-Oriented Programming</dt>
+            <dd id="reasons">Java helps you understand the concept of OOP (Object-Oriented Programming), which is essential to master for developing versatile software systems.</dd>
+
+            <dt>Security</dt>
+            <dd id="description01">Java provides robust security mechanisms, including encryption techniques to protect sensitive data.</dd>
+
+            <dt>Wide Community Support</dt>
+            <dd id="description07">With its vast user base, Java offers extensive community support and a wealth of open-source resources.</dd>
+        </dl>
+
+        <!-- Emphasized text -->
+        <p><em>Learning Java can greatly enhance your career prospects in software development.</em></p>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2024 Greenwood Training Company. All rights reserved.
+    </footer>
+
+</body>
+</html>
